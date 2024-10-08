@@ -30,7 +30,7 @@
     <div class="container">
         <h1 class="text-center mt-4">Painel</h1>
         <div id="painel" class="d-flex">
-            <div class="quadrado d-flex align-items-center justify-content-center" id="quad1">1</div>
+            <div class="quadrado d-flex align-items-center justify-content-center border-radius" id="quad1">1</div>
         </div>
         <div id="controle">
             <button id="adicionarButton">Adicionar</button>
@@ -67,7 +67,7 @@
             let q = document.querySelectorAll(".quadrado");
             if(q.length > 0){
                 let id = parseInt(q[q.length - 1].getAttribute("id").replace("quad", ""))
-                painel.innerHTML += `<div class="quadrado d-flex align-items-center justify-content-center" id="quad${id + 1}">${id + 1}</div>`
+                painel.innerHTML += `<div class="quadrado d-flex align-items-center justify-content-center border-radius" id="quad${id + 1}">${id + 1}</div>`
             }else{
                 painel.innerHTML += `<div class="quadrado d-flex align-items-center justify-content-center" id="quad1">1</div>`
             }
